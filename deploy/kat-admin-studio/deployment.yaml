@@ -21,9 +21,9 @@ spec:
     spec:
       containers:
         - name: kat-admin-studio
-          image: ${KAT_ADMIN_STUDIO_IMAGE}
+          image: "${KAT_ADMIN_STUDIO_IMAGE}"
           ports:
-            - containerPort: ${KAT_ADMIN_STUDIO_PORT}
+            - containerPort: "${KAT_ADMIN_STUDIO_PORT}"
           env:
             - name: NODE_ENV
-              value: ${NODE_ENV}
+              value: "${NODE_ENV}"
